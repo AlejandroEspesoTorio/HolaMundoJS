@@ -69,3 +69,4 @@ function f(){   //Ambito de funcion
     var saludo="Hola";
     console.log(saludo+n) // Hola Juan
 } (" Juan"));
+
