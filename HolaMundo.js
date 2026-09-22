@@ -70,3 +70,9 @@ function f(){   //Ambito de funcion
     console.log(saludo+n) // Hola Juan
 } (" Juan"));
 
+let x = 5;
+let y = 2;
+
+console.log (++x+y);
+console.log (x+++y);
+
