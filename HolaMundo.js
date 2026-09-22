@@ -70,9 +70,42 @@ function f(){   //Ambito de funcion
     console.log(saludo+n) // Hola Juan
 } (" Juan"));
 
+/*-----------------------------------------*/
+
 let x = 5;
 let y = 2;
 
 console.log (++x+y);
 console.log (x+++y);
+
+/*-----------------------------------------*/
+
+let abc = 46;
+
+console.log(abc);
+console.log(abc.toString(2)); //101110
+console.log(abc.toString(16)); //2e
+
+/*-----------------------------------------*/
+
+let aa = "1";
+let bb = 2;
+console.log(typeof(aa), typeof(bb));
+console.log(aa+bb);
+
+let cc = "2";
+let dd = 3;
+console.log(cc-dd);
+
+let ee = true;
+let ff = false;
+
+console.log("Suma", ee+ff);
+console.log("Resta", ee-ff);
+console.log("True + True", true + true);
+
+console.log("??", true == 1);
+console.log("" == 0);
+console.log("3" == 3);
+console.log("3" === 3);
 
