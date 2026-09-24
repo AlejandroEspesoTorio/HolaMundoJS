@@ -1,0 +1,23 @@
+//charAt
+console.log("charAt(pos)");
+let cadena1 = "Helicóptero";
+let num = 4
+console.log("Posición " + num + " de " + cadena1 + ": " + cadena1.charAt(num));
+
+//substr
+console.log("\nsubstr(i, f)");
+let i = 2;
+let f = 6;
+console.log(cadena1.substring(i,));
+console.log(cadena1.substring(i, f));
+
+//split
+console.log("\nsplit(c)");
+let array1 = cadena1.split("ó");
+let array2 = cadena1.split("");
+console.log(array1);
+console.log(array2);
+
+let frase = "Hola que tal";
+let array3 = frase.split(" ");
+console.log(array3);
