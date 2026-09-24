@@ -44,6 +44,10 @@ console.log("\nFunción reverse()");
 console.log(arrayCombinado.reverse());
 
 //sort()
+console.log("\nFunción sort()");
+console.log(["Rojo", "Azul", "Verde"].sort()); //Azul Rojo Verde
+console.log([20, 1, 2, 10].sort()); //No se ordena correctamente
+console.log([6, -2, 2, -7].sort()); //No se ordena correctamente
 
 //indexOf() //Solo coje el primer elemento buscado
 console.log("\nFunción indexOf()");
