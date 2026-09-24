@@ -49,6 +49,25 @@ console.log(["Rojo", "Azul", "Verde"].sort()); //Azul Rojo Verde
 console.log([20, 1, 2, 10].sort()); //No se ordena correctamente
 console.log([6, -2, 2, -7].sort()); //No se ordena correctamente
 
+console.log([6, -2, 2, -7].sort(
+    function (a, b) {
+        return a - b;
+    })
+);
+
+arrayFrutas = ['plátano', 'manzana', 'melocotón'];
+pesoFrutas = {
+    'manzana': 1,
+    'plátano': 2,
+    'melocotón': 3
+};
+
+console.log(
+    arrayFrutas.sort(function (a, b){
+        return pesoFrutas[a] - pesoFrutas[b];
+    })
+);
+
 //indexOf() //Solo coje el primer elemento buscado
 console.log("\nFunción indexOf()");
 console.log(arrayCombinado);
@@ -59,12 +78,12 @@ console.log("\nFunción lastIndexOf()");
 console.log(arrayCombinado);
 console.log(arrayCombinado.lastIndexOf(7));
 
-//slice() mal
-console.log("\nFunción slice()");
+// //slice() mal
+// console.log("\nFunción slice()");
 
-// console.log("Array original:", arrayCombinado); 
-// console.log("Array modificado:", arrayCombinado.slice(1, 7));
+// // console.log("Array original:", arrayCombinado); 
+// // console.log("Array modificado:", arrayCombinado.slice(1, 7));
 
 
-//splice() mal
-console.log("\nFunción splice()");
+// //splice() mal
+// console.log("\nFunción splice()");
