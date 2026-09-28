@@ -21,3 +21,21 @@ console.log(array2);
 let frase = "Hola que tal";
 let array3 = frase.split(" ");
 console.log(array3);
+
+//endsWith()
+
+//startsWith()
+
+//includes()
+
+//match()
+
+//repeat()
+
+//replace()
+
+//trim()
+
+//padStarts()
+
+//padEnd()
