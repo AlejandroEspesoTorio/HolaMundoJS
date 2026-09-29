@@ -38,8 +38,6 @@ let numAnguloRadiantes3 = 0; // Equivalente a 0 grados
 console.log("Tangente de 0: " + Math.tan(numAnguloRadiantes3)); // Resultado: 0
 
 
-//Math.exp() / Math.log()
-
 //Math.ceil()
 console.log("\nMath.ceil()");
 let numeroDecimalAlza1 = 4.10;
