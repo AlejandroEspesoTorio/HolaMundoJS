@@ -1,11 +1,10 @@
+// FALTA VALIDACIÓN FECHA
+
 let booleanoSeguir = false;
 do {
     let nombre = prompt("Introduzca su nombre, apellidos y su fecha de nacimiento (YYYY-MM-DD) separado por comas").trim();
     let arrayUsuario = nombre.split(", ");
     console.log(arrayUsuario);
-
-    let fechaNacimiento = new Date(arrayUsuario[3]);
-    console.log(fechaNacimiento);
 
     if (arrayUsuario.length == 4) { // && arrayUsuario[3] fechaNacimiento
 
