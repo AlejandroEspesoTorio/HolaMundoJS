@@ -104,3 +104,5 @@ console.log(/^(Sba)?c*7$/.test('c7'));
 // abcabcabcabc- true
 
 console.log(/^[a-c]{3,9}[a-c]{3,9}$/.test('abcabc'));
+
+// Tarea educacyl
