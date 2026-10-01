@@ -81,3 +81,26 @@ console.log("\n\\.");
 
 console.log(/\./.test('hola.com')); // true, contiene un punto
 console.log(/\./.test('holacom')); // false, no contiene ningún punto
+
+// Cuantificadores
+console.log("\nCuantificadores:");
+
+console.log(/^a\d?/.test('abc')); //true
+console.log(/^a\d?/.test('ab3')); //true
+console.log(/^a\d/.test('abc')); //false
+console.log(/^a\d/.test('ab3')); //false
+console.log(/\d{3}/.test('h34a')); //false
+console.log(/\d{3}/.test('h346a')); //true
+console.log(/[a-c]{3,}/.test('--cab--')); //true
+
+console.log(/^a\d+$/.test('a33'));
+console.log(/^[a-c]{3,7}$/.test('aaa'));
+console.log(/^(Sba)?c*7$/.test('c7'));
+
+// Comprobar que una expresion que empiece por entre 3-9 letras abc y termine entre 3-9 letras abc
+// abc - true
+// abclabc - true
+// abcabclabcabc -true
+// abcabcabcabc- true
+
+console.log(/^[a-c]{3,9}[a-c]{3,9}$/.test('abcabc'));
