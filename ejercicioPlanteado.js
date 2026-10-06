@@ -1,3 +1,4 @@
+
 //Pedimos los datos al usuario
 
 let nombre = prompt("Introduce tu nombre:");
@@ -24,11 +25,11 @@ function comprobar(titulo, dato, expr) {
 }
 
 
-// Expresiones regulares
+// Expresiones regularees
 
 //Nombre y apellidos:
-//Primera letra mayúscula y el resto letras.
-// e permiten tildes y la Ñ.
+//Primera letra mayúscula y el resto letras
+//e permiten tildes y la Ñ
 
 let expresionNombre = /^[A-ZÁÉÍÓÚÑ][a-záéíóúñ]+$/;
 
@@ -36,48 +37,48 @@ let expresionApellidos = /^[A-ZÁÉÍÓÚÑ][a-záéíóúñ]+( [A-ZÁÉÍÓÚÑ
 
 
 //Edad:
-//Solo números y como máximo 3 dígitos.
+//Solo números y como máximo 3 dígitos
 
 let expresionEdad = /^[0-9]{1,3}$/;
 
 
 //Email:
 //Letras, números, guion y guion bajo.
-//Después una @.
-//Después letras y números.
-//Un punto.
-//Y finalmente 2 o 3 letras.
+//Después una @
+//Después letras y números
+//Un punto
+//Y finalmente 2 o 3 letras
 
 let expresionEmail = /^[a-zA-Z0-9_-]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
 
 
 //Teléfono:
-//Debe empezar por 6 o 9 y tener 9 números.
+//Debe empezar por 6 o 9 y tener 9 números
 
 let expresionTelefono = /^[69][0-9]{8}$/;
 
 
 //Centro:
-//Entre 5 y 120 caracteres.
+//Entre 5 y 120 caracteres
 
 let expresionCentro = /^.{5,120}$/;
 
 
 //Curso:
-//Solo puede ser 1 o 2.
+//Solo puede ser 1 o 2
 
 let expresionCurso = /^[12]$/;
 
 
 //Observaciones:
 //Texto y/o números.
-//Entre 1 y 120 caracteres.
+//Entre 1 y 120 caracteres
 
 let expresionObservaciones = /^.{1,120}$/;
 
 
 //Año:
-//Año de 4 cifras.
+//Año de 4 cifras
 
 let expresionAnio = /^[0-9]{4}$/;
 
