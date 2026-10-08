@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Tiempo transcurrido</title>
+</head>
+
+<body>
+    <script>
+        // Tiempo transcurrido entre dos fechas
+        let fechaCorrecta = false;
+
+        do {
+            let fecha1Texto = prompt("Introduce la primera fecha (DD/MM/AAAA):");
+            let fecha2Texto = prompt("Introduce la segunda fecha (DD/MM/AAAA):");
+
+            if (fecha1Texto && fecha2Texto) {
+                fechaCorrecta = true;
+            } else {
+                alert("No has introducido correctamente las fechas, vuelva a intentarlo");
+            }
+        } while (!fechaCorrecta);
+
+        let partesFecha1 = fecha1Texto.split("/");
+        let partesFecha2 = fecha2Texto.split("/");
+
+        let fecha1 = new Date(
+            partesFecha1[2],
+            partesFecha1[1] - 1,
+            partesFecha1[0]
+        );
+
+        let fecha2 = new Date(
+            partesFecha2[2],
+            partesFecha2[1] - 1,
+            partesFecha2[0]
+        );
+
+        let diferenciaMilisegundos = 0;
+
+        if (fecha1 > fecha2) {
+            diferenciaMilisegundos = fecha1 - fecha2;
+        } else if (fecha2 > fecha1) {
+            diferenciaMilisegundos = fecha2 - fecha1;
+        };
+
+        let dias = Math.floor(diferenciaMilisegundos / (1000 * 60 * 60 * 24));
+        let anios = Math.floor(dias / 365.25);
+        let diasRestantes = Math.floor(dias % 365.25);
+
+        console.log("Han transcurrido " + dias + " días en total.");
+        document.write("Han transcurrido " + dias + " días en total.<br>");
+
+        console.log("Aproximadamente " + anios + " años y " + diasRestantes + " días.");
+        document.write("Aproximadamente " + anios + " años y " + diasRestantes + " días.");
+    </script>
+
+</body>
+
+</html>
