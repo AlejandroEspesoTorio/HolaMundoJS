@@ -3,7 +3,7 @@
 // a partir de un texto almacenar en 5 arrays diferentes las palabras de
 // una, dos, tres, cuatro, cinco o más letras
 
-let texto = "Hola a esto es un ejemplo de texto para separar palabras por su longitud";
+let texto = "Hola avión, esto es un ejemplo de texto para separar palabras por su longitud";
 
 let palabras = texto.match(/\b[a-záéíóúüñ]+\b/gi);
 

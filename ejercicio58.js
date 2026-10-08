@@ -5,6 +5,9 @@ let fraseArray = frase.split(" ");
 let palabra = "";
 
 for(let i = 0; i < fraseArray.length; i++){
+    if (fraseArray[i].toUpperCase){
+
+    }
     palabra += fraseArray[i].toUpperCase() + " ";
 };
 
